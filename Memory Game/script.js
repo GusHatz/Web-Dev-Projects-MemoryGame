@@ -11,7 +11,7 @@ function suffleImage() {
         const random = Math.floor(Math.random()*card.length);
         c.style.order = num[random];
     });
-}
+};
 
 function clicking() {
     for(let i = 0; i < card.length; i++) {
@@ -28,10 +28,10 @@ function clicking() {
                     container.style.pointerEvents = "all";
                 }, 1000);
                 match(flippedCard[0], flippedCard[1]);
-            }
+            };
         });
-    }
-}
+    };
+};
 
 function match(cardOne, cardTwo) {
     if(cardOne.dataset.index == cardTwo.dataset.index) {
@@ -45,5 +45,5 @@ function match(cardOne, cardTwo) {
             cardOne.classList.remove("flip");
             cardTwo.classList.remove("flip");
         }, 1000);
-    }
-}
+    };
+};
